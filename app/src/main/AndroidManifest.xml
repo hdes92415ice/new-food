@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.myapplication">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LogoPage" />
+        <activity android:name=".ZZMemberActivity" />
+        <activity android:name=".ZZShopCartActivity" />
+        <activity android:name=".ZZOptionActivity" />
+        <activity android:name=".ZZMyShopActivity" />
+        <activity
+            android:name=".ZZLoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".IndexActivity"
+            android:label="@string/title_activity_index"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".ZZTestActivity" />
+        <activity
+            android:name=".UploadPage"
+            android:label="@string/title_activity_upload_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CartPage"
+            android:label="@string/title_activity_cart_page"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".MorePage"
+            android:label="@string/title_activity_more_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FoodPage"
+            android:label="@string/title_activity_food_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterPage"
+            android:label="@string/title_activity_register_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginPage"
+            android:label="@string/title_activity_login_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegPage" />
+        <activity android:name=".AddFoodPage" />
+        <activity android:name=".PayPage" />
+        <activity android:name=".DetailPage" />
+        <activity
+            android:name=".MemberPage"
+            android:label="@string/title_activity_member_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MemberEditPage"></activity>
+    </application>
+
+</manifest>
